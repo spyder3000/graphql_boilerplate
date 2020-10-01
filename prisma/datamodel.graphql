@@ -1,0 +1,10 @@
+# 2 types of relations for Delete -- SET_NULL (default) - CASCADE (delete related records) 
+
+type User {
+  id: ID! @unique @id
+  name: String!
+  email: String! @unique
+  password: String!
+  updatedAt: DateTime! @updatedAt
+  createdAt: DateTime! @createdAt
+}
